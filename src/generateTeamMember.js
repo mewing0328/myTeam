@@ -1,6 +1,6 @@
-// Template for the html with sections for the inputs
+// Template for generating the code to append to main html (index.html)
 
-const generateHTML = ({name, role, id, email}) =>
+const generateTeamMember = ({name, role, id, email}) =>
 // create and then append a new card to the html file
 
 `
@@ -19,4 +19,4 @@ const generateHTML = ({name, role, id, email}) =>
   </div>
 `;
 
-module.exports = generateHTML;
+module.exports = generateTeamMember;

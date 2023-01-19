@@ -3,7 +3,8 @@ A Node.js command-line application that takes in information about employees on 
 
 
 
-
+## Tutorials and Credits
+[Calle the Superclass Constructor](http://www.beginwithjava.com/java/inheritance/calling-the-superclass-constructor.html)
 
 
 
