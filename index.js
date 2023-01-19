@@ -1,11 +1,19 @@
 const Employee = require("./lib/Employee");
+const Manager = require("./lib/Manager");
+const Engineer = require("./lib/Engineer");
+const Intern = require("./lib/Intern");
 
-// Create a new Employee object
+// Create new objects
 const employee = new Employee();
+const manager = new Manager();
+const engineer = new Engineer();
+const intern = new Intern();
 
 // Start creating
 employee.create();
-
+manager.create();
+engineer.create();
+intern.create();
 
 /*
 
