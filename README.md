@@ -4,7 +4,11 @@ A Node.js command-line application that takes in information about employees on 
 
 
 ## Tutorials and Credits
-[Calle the Superclass Constructor](http://www.beginwithjava.com/java/inheritance/calling-the-superclass-constructor.html)
+[Call the Superclass Constructor](http://www.beginwithjava.com/java/inheritance/calling-the-superclass-constructor.html)
+
+[GauriKhandke GitHub](https://github.com/GauriKhandke/Team-Profile-Generator): Reviewed this approach. Utilized as an example and used my own preferences for logic and flow. 
+
+[npm: How to create a package-lock.json](https://remarkablemark.org/blog/2021/08/28/how-to-create-npm-package-lockfile/)
 
 
 
