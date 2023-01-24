@@ -1,6 +1,6 @@
 // Template for generating the code to append to main html (index.html)
 
-const generateTeamMember = ({name, role, id, email}) =>
+const generateTeamMember = ({name, role, id, email, addlInfo}) =>
 // create and then append a new card to the html file
 
 `
@@ -13,6 +13,7 @@ const generateTeamMember = ({name, role, id, email}) =>
         <p class="title">${role}</p>
         <p>${id}</p>
         <p>${email}</p>
+        <p>${addlInfo}</p>
         <p><button class="button">Contact</button></p>
       </div>
     </div>
