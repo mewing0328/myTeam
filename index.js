@@ -1,11 +1,14 @@
 /* 
 TODO LIST: Remove as you complete
+ - Add to function when user is done making cards. Append to the end of HTML file 
+  </body>
+  </html>
  - build out the askManagerInfo function: need it to 
    -- what is name, id, and email of the manager
    -- do they want to add another member of team or finished
  - build out functions for asking questions for each role
  - build out functions to create a html card to append to body of index.html
- 
+ - placeholder code for role. Figure out a better approach!!
 */
 
 const Employee = require("./lib/Employee");
@@ -18,23 +21,33 @@ const generateHTML = require('./src/generateTeamMember');
 const inquirer = require("inquirer");
 const inquirerQuestions = require("./lib/inquirerQuestions");
 const generateTeamMember = require("./src/generateTeamMember");
-const { writeFile } = require('fs').promises;
+//const fs = require('fs');
+
+const fs = require('fs/promises');
 
 // AS A manager, I WANT to generate a webpage that displays my team's basic info
 // SO THAT I have quick access to their emails and GitHub profiles
 
 function askManagerInfo () {
   inquirer.prompt(inquirerQuestions.manager)
-  .then((answers) => {
-    const manager = new Manager(answers.name, answers.id, answers.email, answers.addlInfo
-      );
+  .then((answers) => 
+  {const manager = new Manager(answers.name, answers.id, answers.email, answers.addlInfo, answers.role);
   console.log (manager); //delete this later
-  });
 
+  async function example() {
+    try {
+      const content = generateTeamMember(manager);
+      await fs.appendFile('./dist/index.html', content);
+    } catch (err) {
+      console.log(err);
+    }
+  }
+  example();
 
-  // .then((theManager) => writeFile('employeeCard.html', generateTeamMember(theManager)))
-  // .then(() => console.log('Your profile is created! Now, let us build out your team!'))
-  // .catch((err) => console.log(err));
+  }
+  )
+  .then(() => console.log('Your profile is created! Now, let us build out your team!'))
+  .catch((err) => console.log(err));
 };
 
 
