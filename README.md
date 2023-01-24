@@ -104,12 +104,14 @@ Utilized Visual Studio Code
 
 
 ## Tutorials and Credits
-[Call the Superclass Constructor](http://www.beginwithjava.com/java/inheritance/calling-the-superclass-constructor.html): How to utilize the Employee constructor to the Engineer, Manager, and Intern js files.
 
 [npm](https://remarkablemark.org/blog/2021/08/28/how-to-create-npm-package-lockfile/): How to create a package-lock.json
 
 [node.js](https://nodejs.dev/en/learn/writing-files-with-nodejs/): How to append to an existing file.
 
+[inquirer npm](https://www.npmjs.com/package/inquirer)
+
+[Call the Superclass Constructor](http://www.beginwithjava.com/java/inheritance/calling-the-superclass-constructor.html): How to utilize the Employee constructor to the Engineer, Manager, and Intern js files.
 
 <br><br>
 
