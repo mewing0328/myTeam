@@ -1,8 +1,6 @@
 // Template for generating the code to append to main html (index.html)
-
 const generateTeamMember = ({name, role, id, email, addlInfo}) =>
 // create and then append a new card to the html file
-
 `
 <div class="employee">
   <div class="row">
@@ -22,5 +20,4 @@ const generateTeamMember = ({name, role, id, email, addlInfo}) =>
   </div>
 </div>
 `;
-
 module.exports = generateTeamMember;

@@ -40,7 +40,10 @@ The application will be invoked by using the following command:
 ```bash
 node index.js
 ```
+Then an index.html file is created. 
 Then the user answers the questions in the prompt window. An answer is required for all questions.
+Then after each entry, html cards are appended for each employee.
+After all entries, html is finished with closing tags
 
 ## Demo
 [Link for demo video]() (Length of video: x minutes and x seconds)
@@ -55,7 +58,9 @@ A walkthrough video that demonstrates:
 
 
 ## Contributing 
-Contributions welcomed for future versions with features such as starting over and clearing all the employee cards in the index.html file.
+Contributions welcomed for future versions with features such as:
+- saving all the previous cards in a database then fetching so user can come back and add more employees in the future in addition to the previously inputted cards
+- additional enhancements
 
 For all contributions, please refer to [Contributor Covenant Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) for contributing guidelines.
 

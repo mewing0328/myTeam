@@ -7,6 +7,7 @@ const Engineer = require("./lib/Engineer");
 const Intern = require("./lib/Intern");
 const inquirer = require("inquirer");
 const inquirerQuestions = require("./lib/inquirerQuestions");
+const generateHtml = require("./src/generateHtml");
 const generateTeamMember = require("./src/generateTeamMember");
 const fs = require('fs/promises');
 
@@ -29,7 +30,7 @@ function askManagerInfo () {
   async function appendToHtml() {
     try {
       const content = generateTeamMember(manager);
-      await fs.appendFile('./dist/index.html', content);
+      await fs.appendFile('./index.html', content);
     } catch (err) {
       console.log(err);
     }
@@ -48,7 +49,7 @@ function askEngineerInfo () {
   async function appendToHtml() {
     try {
       const content = generateTeamMember(engineer);
-      await fs.appendFile('./dist/index.html', content);
+      await fs.appendFile('./index.html', content);
     } catch (err) {
       console.log(err);
     }
@@ -67,7 +68,7 @@ function askInternInfo () {
   async function appendToHtml() {
     try {
       const content = generateTeamMember(intern);
-      await fs.appendFile('./dist/index.html', content);
+      await fs.appendFile('./index.html', content);
     } catch (err) {
       console.log(err);
     }
@@ -88,20 +89,25 @@ function whatNext () {
       console.log("All done! Check out the html");
       async function endOfHtml() {
         try {
-          await fs.appendFile('./dist/index.html', '</body></html>');
+          await fs.appendFile('./index.html', '</body></html>');
         } catch (err) {
           console.log(err);
         }
       }
-      endOfHtml();
+      endOfHtml()
     } 
-    else {askRole()}
-  }
-  );
+    else if(next == 'Yes'){askRole()} 
+    else {createHtml()}
+  });
+};
+
+function createHtml(){
+  fs.writeFile('index.html', generateHtml)
 };
 
 function init(){
   console.log("Hello! Lets get started building the team. You will be asked some questions. Please answer all questions.")
+  createHtml();
   askRole()
 };
 
