@@ -116,7 +116,9 @@ Utilized Visual Studio Code
 
 [node.js](https://nodejs.dev/en/learn/writing-files-with-nodejs/): How to append to an existing file.
 
-[inquirer npm](https://www.npmjs.com/package/inquirer)
+[inquirer npm](https://www.npmjs.com/package/inquirer): Inquirier to ask and get user inputs.
+
+[jestjs.io](https://jestjs.io/docs/getting-started): Jest documentation to create my test.js files
 
 [Call the Superclass Constructor](http://www.beginwithjava.com/java/inheritance/calling-the-superclass-constructor.html): How to utilize the Employee constructor to the Engineer, Manager, and Intern js files.
 
