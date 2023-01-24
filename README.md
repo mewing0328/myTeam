@@ -55,6 +55,8 @@ A walkthrough video that demonstrates:
 
 
 ## Contributing 
+Contributions welcomed for future versions with features such as starting over and clearing all the employee cards in the index.html file.
+
 For all contributions, please refer to [Contributor Covenant Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) for contributing guidelines.
 
 ## Tests 
