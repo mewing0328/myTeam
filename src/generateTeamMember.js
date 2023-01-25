@@ -1,23 +1,54 @@
 // Template for generating the code to append to main html (index.html)
-const generateTeamMember = ({name, role, id, email, addlInfo}) =>
+const generateManager = ({name, role, id, email, addlInfo}) =>
 // create and then append a new card to the html file
 `
-<div class="employee">
-  <div class="row">
-    <div class="column">
-      <div class="card">
-        <img src="img1.jpg" alt="Jane" style="width:100%">
-        <div class="container">
-          <h2>${name}</h2>
-          <p class="title">${role}</p>
-          <p>${id}</p>
-          <p>[${email}](mailto:${email})</p>
-          <p>${addlInfo}</p>
-          <p><button class="button">Contact</button></p>
-        </div>
-      </div>
-    </div>
+<div class="card text-center" style="width: 15rem;">
+  <img class="card-img-top" src="./Assets/managerIcon.jpg" alt="Card image cap">
+  <div class="card-body">
+    <h4 class="card-title">${name}</h4>
+    <h5 class="card-title">${role}</h5>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">ID | ${id}</li>
+      <li class="list-group-item">Office Number | ${addlInfo}</li>
+    </ul>
+    <a href='mailto:${email}' style="color: blue" class="btn btn-primary"><p style="color:antiquewhite">Email Me!</p></a>
   </div>
 </div>
 `;
-module.exports = generateTeamMember;
+module.exports = generateManager;
+
+const generateEngineer = ({name, role, id, email, addlInfo}) =>
+// create and then append a new card to the html file
+`
+<div class="card text-center" style="width: 15rem;">
+<img class="card-img-top" src="./Assets/managerIcon.jpg" alt="Card image cap">
+<div class="card-body">
+  <h4 class="card-title">${name}</h4>
+  <h5 class="card-title">${role}</h5>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">ID | ${id}</li>
+    <li class="list-group-item"> <a href="https://github.com/${addlInfo}" target="blank">GitHub | ${addlInfo}</a></li>
+  </ul>
+  <a href='mailto:${email}' style="color: blue" class="btn btn-primary"><p style="color:antiquewhite">Email Me!</p></a>
+</div>
+</div>
+`;
+module.exports = generateEngineer;
+
+const generateIntern = ({name, role, id, email, addlInfo}) =>
+// create and then append a new card to the html file
+`
+<div class="card text-center" style="width: 15rem;">
+  <img class="card-img-top" src="./Assets/managerIcon.jpg" alt="Card image cap">
+  <div class="card-body">
+    <h4 class="card-title">${name}</h4>
+    <h5 class="card-title">${role}</h5>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">ID | ${id}</li>
+      <li class="list-group-item">School | ${addlInfo}</li>
+    </ul>
+    <a href='mailto:${email}' style="color: blue" class="btn btn-primary"><p style="color:antiquewhite">Email Me!</p></a>
+  </div>
+</div>
+`;
+module.exports = generateIntern;

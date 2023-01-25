@@ -8,7 +8,9 @@ const Intern = require("./lib/Intern");
 const inquirer = require("inquirer");
 const inquirerQuestions = require("./lib/inquirerQuestions");
 const generateHtml = require("./src/generateHtml");
-const generateTeamMember = require("./src/generateTeamMember");
+const generateManager = require("./src/generateTeamMember");
+const generateEngineer = require("./src/generateTeamMember");
+const generateIntern = require("./src/generateTeamMember");
 const fs = require('fs/promises');
 
 function askRole () {
@@ -29,7 +31,7 @@ function askManagerInfo () {
   {const manager = new Manager(answers.name, answers.id, answers.email, answers.addlInfo, 'Manager');
   async function appendToHtml() {
     try {
-      const content = generateTeamMember(manager);
+      const content = generateManager(manager);
       await fs.appendFile('./index.html', content);
     } catch (err) {
       console.log(err);
@@ -48,7 +50,7 @@ function askEngineerInfo () {
   {const engineer = new Engineer(answers.name, answers.id, answers.email, answers.addlInfo, 'Engineer');
   async function appendToHtml() {
     try {
-      const content = generateTeamMember(engineer);
+      const content = generateEngineer(engineer);
       await fs.appendFile('./index.html', content);
     } catch (err) {
       console.log(err);
@@ -67,7 +69,7 @@ function askInternInfo () {
   {const intern = new Intern(answers.name, answers.id, answers.email, answers.addlInfo, 'Intern');
   async function appendToHtml() {
     try {
-      const content = generateTeamMember(intern);
+      const content = generateIntern(intern);
       await fs.appendFile('./index.html', content);
     } catch (err) {
       console.log(err);
@@ -106,9 +108,9 @@ function createHtml(){
 };
 
 function init(){
-  console.log("Hello! Lets get started building the team. You will be asked some questions. Please answer all questions.")
+  console.log("Hello, Manager! Lets get started with building your team. Start with your profile and then add your team members.")
   createHtml();
-  askRole()
+  askManagerInfo()
 };
 
 init();
