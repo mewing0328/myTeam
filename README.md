@@ -122,6 +122,12 @@ Utilized Visual Studio Code
 
 [Call the Superclass Constructor](http://www.beginwithjava.com/java/inheritance/calling-the-superclass-constructor.html): How to utilize the Employee constructor to the Engineer, Manager, and Intern js files.
 
+[window.open](https://www.geeksforgeeks.org/how-to-open-url-in-new-tab-using-javascript/): Open the GitHub on a new page
+
+[Open Email in Default Mail App](https://stackoverflow.com/questions/4994954/open-default-mail-client-with-a-link)
+
+[pixabay](https://pixabay.com/): Images rendered on the html page
+
 <br><br>
 
 -------- NOTES FOR REQUIREMENTS -------------

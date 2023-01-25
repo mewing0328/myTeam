@@ -11,7 +11,7 @@ const generateTeamMember = ({name, role, id, email, addlInfo}) =>
           <h2>${name}</h2>
           <p class="title">${role}</p>
           <p>${id}</p>
-          <p>${email}</p>
+          <p>[${email}](mailto:${email})</p>
           <p>${addlInfo}</p>
           <p><button class="button">Contact</button></p>
         </div>
