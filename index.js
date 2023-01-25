@@ -1,16 +1,12 @@
-/* 
-TODO LIST: Remove as you complete
-
-*/
 const Manager = require("./lib/Manager");
 const Engineer = require("./lib/Engineer");
 const Intern = require("./lib/Intern");
 const inquirer = require("inquirer");
 const inquirerQuestions = require("./lib/inquirerQuestions");
 const generateHtml = require("./src/generateHtml");
-const generateManager = require("./src/generateTeamMember");
-const generateEngineer = require("./src/generateTeamMember");
-const generateIntern = require("./src/generateTeamMember");
+const generateManager = require("./src/generateManager");
+const generateEngineer = require("./src/generateEngineer");
+const generateIntern = require("./src/generateIntern");
 const fs = require('fs/promises');
 
 function askRole () {
