@@ -89,7 +89,7 @@ function whatNext () {
       console.log("All done! Check out the html");
       async function endOfHtml() {
         try {
-          await fs.appendFile('./index.html', '</body></html>');
+          await fs.appendFile('./index.html', '</div>\n</body>\n</html>');
         } catch (err) {
           console.log(err);
         }
