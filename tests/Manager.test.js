@@ -22,5 +22,3 @@ test('the getRole() function is working', async () => {
   const manager = new Manager("MaSandra", 123, "masandra@123.com", 6235, "Manager");
   expect(manager.getRole()).toBe(role);
 });
-
-
