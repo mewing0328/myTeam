@@ -28,7 +28,7 @@ function askManagerInfo () {
   async function appendToHtml() {
     try {
       const content = generateManager(manager);
-      await fs.appendFile('./index.html', content);
+      await fs.appendFile('./dist/index.html', content);
     } catch (err) {
       console.log(err);
     }
@@ -47,7 +47,7 @@ function askEngineerInfo () {
   async function appendToHtml() {
     try {
       const content = generateEngineer(engineer);
-      await fs.appendFile('./index.html', content);
+      await fs.appendFile('./dist/index.html', content);
     } catch (err) {
       console.log(err);
     }
@@ -66,7 +66,7 @@ function askInternInfo () {
   async function appendToHtml() {
     try {
       const content = generateIntern(intern);
-      await fs.appendFile('./index.html', content);
+      await fs.appendFile('./dist/index.html', content);
     } catch (err) {
       console.log(err);
     }
@@ -87,7 +87,7 @@ function whatNext () {
       console.log("All done! Check out the html");
       async function endOfHtml() {
         try {
-          await fs.appendFile('./index.html', '</div>\n</body>\n</html>');
+          await fs.appendFile('./dist/index.html', '</div>\n</body>\n</html>');
         } catch (err) {
           console.log(err);
         }
@@ -100,7 +100,7 @@ function whatNext () {
 };
 
 function createHtml(){
-  fs.writeFile('index.html', generateHtml)
+  fs.writeFile('./dist/index.html', generateHtml)
 };
 
 function init(){

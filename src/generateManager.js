@@ -4,15 +4,15 @@ const generateManager = ({name, role, id, email, addlInfo}) =>
 // create and then append a new card to the html file
 `
 <div class="card text-center" style="width: 15rem;">
-  <img class="card-img-top" src="./Assets/managerIcon.png" alt="Card image cap">
+  <img class="card-img-top" src="../Assets/managerIcon.png" alt="Card image cap">
   <div class="card-body">
-    <h4 class="card-title">${name}</h4>
-    <h5 class="card-title">${role}</h5>
+    <h3 class="card-title" style="color: red">${name}</h3>
+    <h5 class="card-title" style="color: red">${role}</h5>
     <ul class="list-group list-group-flush">
       <li class="list-group-item">ID | ${id}</li>
       <li class="list-group-item">Office Number | ${addlInfo}</li>
     </ul>
-    <a href='mailto:${email}' style="color: blue" class="btn btn-primary"><p class="emailMe" style="color:antiquewhite">Email Me!</p></a>
+    <a href='mailto:${email}' class="btn btn-danger"><p class="emailMe" style="color:antiquewhite">Email Me!</p></a>
   </div>
 </div>
 `;
