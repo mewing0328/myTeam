@@ -21,7 +21,7 @@ A Node.js command-line application that takes in information about employees on 
 
 [8. Screenshots](#screenshots)
 
-[9. Credits](#tutorialsandCredits)
+[9. Credits](#credits)
 
 <br></br>
 
@@ -120,12 +120,23 @@ Utilized Visual Studio Code
 
     <img src="./Assets/startoverSs.png" style="width:30rem">
 
-4. After all questions are answered, the application pushes employee cards into the [HTML file](./dist/index.html) and applies the [CSS](./dist/style.css) styling to those cards.
+4. After all questions are answered, the application pushes employee cards into the [HTML file](./dist/index.html) and applies the [CSS](./dist/style.css) styling to those cards. <br> <br>Screenshots to show responsive to screen size.
 
-    <img src="./Assets/x" style="width:30rem">
+    <img src="./Assets/responsiveSs.png" style="width:30rem">
+    <img src="./Assets/responsiveSmallSs.png" style="width:30rem">
+
+5. When the user clicks on an email address in the HTML, the user's default email program opens and populates the TO field of the email with the address
+
+    <img src="./Assets/emailSs.png" style="width:30rem">
 
 
-## Tutorials and Credits
+6. When the user clicks on the GitHub username, then that GitHub profile opens in a new tab
+
+    <img src="./Assets/githubSs.png" style="width:30rem">    
+
+
+## Credits
+Credit for tutorials and guides I utilized in my code
 
 [npm](https://remarkablemark.org/blog/2021/08/28/how-to-create-npm-package-lockfile/): How to create a package-lock.json
 
