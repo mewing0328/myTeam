@@ -13,9 +13,12 @@ function askRole () {
   inquirer.prompt(inquirerQuestions.role)
   .then ((answer) => 
   {const role = answer.role; // taking the object and redefined
-    if (role == 'Manager'){askManagerInfo();} // conditionals to determine what questions to ask
-    else  if (role == 'Engineer'){askEngineerInfo();} 
-    else {askInternInfo();}
+    if (role == 'Engineer'){
+      askEngineerInfo();
+    } 
+    else 
+    {askInternInfo();
+    }
   }
   );
 };

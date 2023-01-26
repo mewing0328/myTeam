@@ -13,7 +13,7 @@ Because this application won’t be deployed, you’ll need to provide a link to
 > **Note**: There is no starter code for this assignment.
 
 ## User Story
-
+--Done--
 ```md
 AS A manager
 I WANT to generate a webpage that displays my team's basic info
@@ -23,30 +23,39 @@ SO THAT I have quick access to their emails and GitHub profiles
 ## Acceptance Criteria
 
 ```md
+--Done-- 
 GIVEN a command-line application that accepts user input
 
---Done-- WHEN I am prompted for my team members and their information
+--Done-- 
+WHEN I am prompted for my team members and their information
 THEN an HTML file is generated that displays a nicely formatted team roster based on user input
 
 
---Done-- WHEN I click on an email address in the HTML
+--Done-- 
+WHEN I click on an email address in the HTML
 THEN my default email program opens and populates the TO field of the email with the address
 
+--Done-- 
 WHEN I click on the GitHub username
 THEN that GitHub profile opens in a new tab
 
+--Done-- 
 WHEN I start the application
 THEN I am prompted to enter the team manager’s name, employee ID, email address, and office number
 
+--Done-- 
 WHEN I enter the team manager’s name, employee ID, email address, and office number
 THEN I am presented with a menu with the option to add an engineer or an intern or to finish building my team
 
+--Done-- 
 WHEN I select the engineer option
 THEN I am prompted to enter the engineer’s name, ID, email, and GitHub username, and I am taken back to the menu
 
+--Done-- 
 WHEN I select the intern option
 THEN I am prompted to enter the intern’s name, ID, email, and school, and I am taken back to the menu
 
+--Done-- 
 WHEN I decide to finish building my team
 THEN I exit the application, and the HTML is generated
 ```
@@ -65,12 +74,14 @@ This Challenge will combine many of the skills we've covered so far. In addition
 
 Because this Challenge will require a video submission, refer to the [Fullstack Blog Video Submission Guide](https://coding-boot-camp.github.io/full-stack/computer-literacy/video-submission-guide) for additional guidance on creating a video.
 
+--Done-- 
 Your application should use [Jest](https://www.npmjs.com/package/jest) for running the unit tests and [Inquirer](https://www.npmjs.com/package/inquirer/v/8.2.4) for collecting input from the user. The application will be invoked by using the following command:
 
+--Done-- 
 ```bash
 node index.js
 ```
-
+--Done-- 
 It is recommended that you start with a directory structure that looks like the following example:
 
 ```md
@@ -87,11 +98,13 @@ It is recommended that you start with a directory structure that looks like the 
 ├── index.js // runs the application
 └── package.json
 ```
-
+--Done-- 
 **Important**: Make sure that you remove `dist` from the `.gitignore` file so that Git will track this folder and include it when you push up to your application's repository.
 
+--Done-- 
 The application must include `Employee`, `Manager`, `Engineer`, and `Intern` classes. The tests for these classes (in the `_tests_` directory) must ALL pass.
 
+--Done-- 
 The first class is an `Employee` parent class with the following properties and methods:
 
 - `name`
@@ -108,6 +121,7 @@ The first class is an `Employee` parent class with the following properties and 
 
 - `getRole()`&mdash;returns `'Employee'`
 
+--Done-- 
 The other three classes will extend `Employee`.
 
 In addition to `Employee`'s properties and methods, `Manager` will also have the following:
@@ -116,6 +130,7 @@ In addition to `Employee`'s properties and methods, `Manager` will also have the
 
 - `getRole()`&mdash;overridden to return `'Manager'`
 
+--Done-- 
 In addition to `Employee`'s properties and methods, `Engineer` will also have the following:
 
 - `github`&mdash;GitHub username
@@ -123,6 +138,8 @@ In addition to `Employee`'s properties and methods, `Engineer` will also have th
 - `getGithub()`
 
 - `getRole()`&mdash;overridden to return `'Engineer'`
+
+--Done-- 
 
 In addition to `Employee`'s properties and methods, `Intern` will also have the following:
 
@@ -148,11 +165,15 @@ Finally, although it’s not a requirement, consider adding validation to ensure
 
 This Challenge is graded based on the following criteria:
 
+
+
 ### Deliverables: 15%
 
 - A sample HTML file generated using the application must be submitted.
 
 - Your GitHub repository containing your application code.
+
+
 
 ### Walkthrough Video: 32%
 
@@ -166,8 +187,9 @@ This Challenge is graded based on the following criteria:
 
 - The walkthrough video must demonstrate a generated HTML file that matches the user input.
 
-### Technical Acceptance Criteria: 40%
 
+### Technical Acceptance Criteria: 40%
+--Done-- 
 - Satisfies all of the preceding acceptance criteria plus the following:
 
 - Uses the [Inquirer package](https://www.npmjs.com/package/inquirer/v/8.2.4).
@@ -187,6 +209,8 @@ This Challenge is graded based on the following criteria:
 - Repository contains multiple descriptive commit messages.
 
 - Repository contains a high-quality readme with description and a link to a walkthrough video.
+
+
 
 ## Review
 
