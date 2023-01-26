@@ -68,7 +68,7 @@ Also, an index.html file is created.
 ## Demo
 [Link for demo video](https://watch.screencastify.com/v/HsQlGM20Ei7ppya606pR) (Length of video: 5 minutes and 47 seconds)
 
-The video is also within the assets folder named "x".
+The video is also within the assets folder named "myTeam Demo.mp4".
 
 A walkthrough video that demonstrates: 
 - the functionality of the myTeam generator.
