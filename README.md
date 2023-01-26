@@ -28,7 +28,7 @@ A Node.js command-line application that takes in information about employees on 
 ## Installation 
 The application has dependencies (see package.json file). Before using the application, install npm modules.
 
-Code for bash below or watch the [demo](https://watch.screencastify.com/v/HsQlGM20Ei7ppya606pR) video.
+Code for bash below or watch the [demo](https://watch.screencastify.com/v/ysbU11ex258EHuNbCyB4) video.
 
 ```bash
 npm install
@@ -66,7 +66,7 @@ Also, an index.html file is created.
 ```
 
 ## Demo
-[Link for demo video](https://watch.screencastify.com/v/HsQlGM20Ei7ppya606pR) (Length of video: 5 minutes and 47 seconds)
+[Link for demo video](https://watch.screencastify.com/v/ysbU11ex258EHuNbCyB4) (Length of video: 4 minutes and 27 seconds)
 
 The video is also within the assets folder named "myTeam Demo.mp4".
 
