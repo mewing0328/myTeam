@@ -156,4 +156,6 @@ Credit for tutorials and guides I utilized in my code
 
 [pixabay](https://pixabay.com/): Images rendered on the html page
 
-[pixabay](https://pixabay.com/the users/ivke32-2526695/): This account for the icons for each employee card
+[pixabay](https://pixabay.com/users/ivke32-2526695/): This account for the icons for each employee card
+
+[Adobe Logo Express Maker](https://express.adobe.com/express-apps/logo-maker): Utilized to create a custom logo for the application
