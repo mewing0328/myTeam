@@ -66,7 +66,7 @@ Also, an index.html file is created.
 ```
 
 ## Demo
-[Link for demo video](https://watch.screencastify.com/v/ysbU11ex258EHuNbCyB4) (Length of video: 4 minutes and 27 seconds)
+[Link for demo video](https://youtu.be/6-FNT6VpUGM) (Length of video: 4 minutes and 27 seconds)
 
 The video is also within the assets folder named "myTeam Demo.mp4".
 
